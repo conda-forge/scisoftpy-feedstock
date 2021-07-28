@@ -1,17 +1,17 @@
 {% set name = "scisoftpy" %}
-{% set version = "2.17.0" %}
+{% set version = "2.23.0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: bfc966e3eb34104098ff366c6b421204433251e86301932646ea233d33495742
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 930e27231b1154ae79e55c5fdd8ae044a424dbec7cc2cd24d6130d8dce1a4e0d
 
 build:
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv "
+  number: 0
+  script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
@@ -33,8 +33,8 @@ test:
 
 about:
   home: https://gerrit.diamond.ac.uk/admin/repos/scisoft/scisoft-core
-  license: "Apache-2.0"
-  license_family: "APACHE"
+  license: Apache-2.0
+  license_family: APACHE
   license_file: LICENSE.txt
   summary: Dawn Python Extensions
 
