@@ -1,5 +1,5 @@
 {% set name = "scisoftpy" %}
-{% set version = "2.23.0" %}
+{% set version = "2.23.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 930e27231b1154ae79e55c5fdd8ae044a424dbec7cc2cd24d6130d8dce1a4e0d
+  sha256: 1c798d0ea30177426589e434ebf1078f5d0df88b8f8bcbaa147dff71734b01b2
 
 build:
   number: 0
