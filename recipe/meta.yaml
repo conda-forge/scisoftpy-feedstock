@@ -12,20 +12,20 @@ source:
 build:
   number: 2
   script: '{{ PYTHON }} -m pip install . -vv '
+  noarch: python
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3
     - setuptools
 
   run:
     - h5py
     - numpy
     - pillow
-    - python
+    - python >=3
     - six
-    - subprocess32  # [unix and py2k]
 
 test:
   imports:
