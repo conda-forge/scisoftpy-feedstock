@@ -10,22 +10,22 @@ source:
   sha256: 1c798d0ea30177426589e434ebf1078f5d0df88b8f8bcbaa147dff71734b01b2
 
 build:
-  number: 1
+  number: 2
   script: '{{ PYTHON }} -m pip install . -vv '
+  noarch: python
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3
     - setuptools
 
   run:
     - h5py
     - numpy
     - pillow
-    - python
+    - python >=3
     - six
-    - subprocess32  # [unix and py2k]
 
 test:
   imports:
