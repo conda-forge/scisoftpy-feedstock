@@ -1,5 +1,5 @@
 {% set name = "scisoftpy" %}
-{% set version = "2.23.1" %}
+{% set version = "2.29.0" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1c798d0ea30177426589e434ebf1078f5d0df88b8f8bcbaa147dff71734b01b2
+  sha256: 85e5168dc858eca133c5574a06f94515aaf19b75ded5930af1dfee6dfda49036
 
 build:
-  number: 2
+  number: 0
   script: '{{ PYTHON }} -m pip install . -vv '
   noarch: python
 
