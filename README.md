@@ -1,11 +1,11 @@
-About scisoftpy
-===============
+About scisoftpy-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scisoftpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gerrit.diamond.ac.uk/admin/repos/scisoft/scisoft-core
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scisoftpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Dawn Python Extensions
 
