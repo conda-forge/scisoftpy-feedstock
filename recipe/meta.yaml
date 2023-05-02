@@ -10,7 +10,7 @@ source:
   sha256: 85e5168dc858eca133c5574a06f94515aaf19b75ded5930af1dfee6dfda49036
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . -vv '
   noarch: python
 
@@ -21,11 +21,13 @@ requirements:
     - setuptools
 
   run:
-    - h5py
-    - numpy
+    - python
+    - h5py # depends on numpy
     - pillow
-    - python >=3
     - six
+    - tifffile
+    - pycbf # [py3k]
+    - subprocess32 # [unix and py2k]
 
 test:
   imports:
@@ -41,4 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - PeterC-DLS
-    - tschoonj
+    - jacobfilik
