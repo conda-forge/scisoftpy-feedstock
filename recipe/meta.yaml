@@ -21,7 +21,7 @@ requirements:
     - setuptools
 
   run:
-    - python
+    - python >= 2.7
     - h5py # depends on numpy
     - pillow
     - six
