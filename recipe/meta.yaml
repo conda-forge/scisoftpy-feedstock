@@ -16,17 +16,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3
+    - python
     - setuptools
 
   run:
-    - python >=2.7
-    - h5py # depends on numpy
+    - python
+    - h5py  # depends on numpy
     - pillow
     - six
     - tifffile
-    - pycbf # [py3k]
-    - subprocess32 # [unix and py2k]
+    - pycbf  # [py3k]
+    - subprocess32  # [unix and py2k]
 
 test:
   imports:
