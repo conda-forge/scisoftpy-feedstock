@@ -26,6 +26,7 @@ requirements:
     - six
     - tifffile
     - pycbf  # [py3k]
+    - packaging  # [py >= 40]
     - subprocess32  # [unix and py2k]
 
 test:
