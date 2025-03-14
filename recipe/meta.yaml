@@ -21,11 +21,13 @@ requirements:
 
   run:
     - python
+    - packaging  # [py >= 40]
+    - numpy
+  run_constrained:
     - h5py  # depends on numpy
     - pillow
     - tifffile
     - pycbf  # [py3k]
-    - packaging  # [py >= 40]
 
 test:
   imports:
