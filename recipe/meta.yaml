@@ -10,7 +10,7 @@ source:
   sha256: d685ca4a1e66dbee17767e8d213e3aa739462c8b638183b5d487159e451931cc
 
 build:
-  number: 1
+  number: 2
   script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
@@ -27,7 +27,6 @@ requirements:
     - tifffile
     - pycbf  # [py3k]
     - packaging  # [py >= 40]
-    - numpy
 
 test:
   imports:
